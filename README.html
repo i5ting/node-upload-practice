@@ -1,0 +1,419 @@
+
+	    <html>
+	      <head>
+				  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	        <title>README</title>
+					
+					<link href="toc/style/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/style/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all" rel="stylesheet" type="text/css"/>
+					<link href="toc/css/zTreeStyle/zTreeStyle.css" media="all" rel="stylesheet" type="text/css"/>
+			
+				  <style>
+					pre {
+					    counter-reset: line-numbering;
+					    border: solid 1px #d9d9d9;
+					    border-radius: 0;
+					    background: #fff;
+					    padding: 0;
+					    line-height: 23px;
+					    margin-bottom: 30px;
+					    white-space: pre;
+					    overflow-x: auto;
+					    word-break: inherit;
+					    word-wrap: inherit;
+					}
+
+					pre a::before {
+					  content: counter(line-numbering);
+					  counter-increment: line-numbering;
+					  padding-right: 1em; /* space after numbers */
+					  width: 25px;
+					  text-align: right;
+					  opacity: 0.7;
+					  display: inline-block;
+					  color: #aaa;
+					  background: #eee;
+					  margin-right: 16px;
+					  padding: 2px 10px;
+					  font-size: 13px;
+					  -webkit-touch-callout: none;
+					  -webkit-user-select: none;
+					  -khtml-user-select: none;
+					  -moz-user-select: none;
+					  -ms-user-select: none;
+					  user-select: none;
+					}
+
+					pre a:first-of-type::before {
+					  padding-top: 10px;
+					}
+
+					pre a:last-of-type::before {
+					  padding-bottom: 10px;
+					}
+
+					pre a:only-of-type::before {
+					  padding: 10px;
+					}
+			
+					.highlight { background-color: #ffffcc } /* RIGHT */
+					</style>
+	      </head>
+	      <body>
+				  <div>
+							<div style='width:25%;'>
+									<ul id="tree" class="ztree" style='width:100%'>
+		
+									</ul>
+							</div>
+			        <div id='readme' style='width:70%;margin-left:20%;'>
+			          	<article class='markdown-body'>
+			            	<style>.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f0f0f0; }
+.highlight .c { color: #60a0b0; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #007020; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #007020 } /* Comment.Preproc */
+.highlight .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #007020 } /* Keyword.Pseudo */
+.highlight .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #902000 } /* Keyword.Type */
+.highlight .m { color: #40a070 } /* Literal.Number */
+.highlight .s { color: #4070a0 } /* Literal.String */
+.highlight .na { color: #4070a0 } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.highlight .no { color: #60add5 } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #007020 } /* Name.Exception */
+.highlight .nf { color: #06287e } /* Name.Function */
+.highlight .nl { color: #002070; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #bb60d5 } /* Name.Variable */
+.highlight .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #40a070 } /* Literal.Number.Bin */
+.highlight .mf { color: #40a070 } /* Literal.Number.Float */
+.highlight .mh { color: #40a070 } /* Literal.Number.Hex */
+.highlight .mi { color: #40a070 } /* Literal.Number.Integer */
+.highlight .mo { color: #40a070 } /* Literal.Number.Oct */
+.highlight .sb { color: #4070a0 } /* Literal.String.Backtick */
+.highlight .sc { color: #4070a0 } /* Literal.String.Char */
+.highlight .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #4070a0 } /* Literal.String.Double */
+.highlight .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.highlight .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.highlight .sx { color: #c65d09 } /* Literal.String.Other */
+.highlight .sr { color: #235388 } /* Literal.String.Regex */
+.highlight .s1 { color: #4070a0 } /* Literal.String.Single */
+.highlight .ss { color: #517918 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #bb60d5 } /* Name.Variable.Class */
+.highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
+.highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */</style>
+<h1>node-upload-practice</h1>
+
+<h2>上传说明</h2>
+
+<p>总体上来说，对于post文件上传这样的过程，主要有以下几个部分：</p>
+
+<ul>
+<li>获取http请求报文肿的头部信息，我们可以从中获得是否为POST方法，实体主体的总大小，边界字符串等，这些对于实体主体数据的解析都是非常重要的</li>
+<li>获取POST数据（实体主体）</li>
+<li>对POST数据进行解析</li>
+<li>将数据写入文件</li>
+</ul>
+
+<h3>获取http请求报文头部信息</h3>
+
+<p>利用nodejs中的 http.ServerRequest中获取</p>
+<div class="highlight"><pre><span class="vg">request</span><span class="o">.</span><span class="vg">method</span>
+</pre></div>
+<p>用来标识请求类型</p>
+<div class="highlight"><pre><span class="vg">request</span><span class="o">.</span><span class="vg">headers</span>
+</pre></div>
+<p>其中我们关心两个字段：</p>
+<div class="highlight"><pre><span class="vg">content</span><span class="o">-</span><span class="vg">type</span>
+</pre></div>
+<p>包含了表单类型和边界字符串（下面会介绍）信息。</p>
+<div class="highlight"><pre><span class="vg">content</span><span class="o">-</span><span class="vg">length</span>
+</pre></div>
+<p>post数据的长度</p>
+
+<h4>关于content-type</h4>
+
+<ul>
+<li>get请求的headers中没有content-type这个字段</li>
+<li>post 的 content-type 有两种
+
+<ul>
+<li>application/x-www-form-urlencoded
+这种就是一般的文本表单用post传地数据，只要将得到的data用querystring解析下就可以了</li>
+<li>multipart/form-data
+文件表单的传输，也是本文介绍的重点</li>
+</ul></li>
+</ul>
+
+<h3>获取POST数据</h3>
+
+<p>前面已经说过，post数据的传输是可能分包的，因此必然是异步的。post数据的接受过程如下：</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">postData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="c1">&#39;&#39;;</span>
+<span class="vg">request</span><span class="o">.</span><span class="vg">addListener</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="p">(</span><span class="vg">postDataChunk</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">有新的数据包到达就执行</span>
+<span class="w">  </span><span class="vg">postData</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="vg">postDataChunk</span><span class="p">;</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="s2">&quot;Received POST data chunk &#39;&quot;</span><span class="o">+</span>
+<span class="w">  </span><span class="vg">postDataChunk</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;&#39;.&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+
+<span class="vg">request</span><span class="o">.</span><span class="vg">addListener</span><span class="p">(</span><span class="s2">&quot;end&quot;</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="o">//</span><span class="w"> </span><span class="err">数据传输完毕</span>
+<span class="w">  </span><span class="vg">console</span><span class="o">.</span><span class="vg">log</span><span class="p">(</span><span class="c1">&#39;post data finish receiving: &#39; + postData );</span>
+<span class="p">});</span>
+</pre></div>
+<p>注意，对于非文件post数据，上面以字符串接收是没问题的，但其实 postDataChunk 是一个 buffer 类型数据，在遇到二进制时，这样的接受方式存在问题。</p>
+
+<h3>POST数据的解析（multipart/form-data）</h3>
+
+<p>在解析POST数据之前，先介绍一下post数据的格式：</p>
+<div class="highlight"><pre><span class="vg">multipart</span><span class="o">/</span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span>
+</pre></div>
+<p>类型的post数据</p>
+
+<p>例如我们有表单如下</p>
+<div class="highlight"><pre>    <span class="nt">&lt;FORM</span> <span class="na">action=</span><span class="s">&quot;http://server.com/cgi/handle&quot;</span>
+       <span class="na">enctype=</span><span class="s">&quot;multipart/form-data&quot;</span>
+       <span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;P&gt;</span>
+    What is your name? <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;submit-name&quot;</span><span class="nt">&gt;&lt;BR&gt;</span>
+    What files are you sending? <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="na">name=</span><span class="s">&quot;files&quot;</span><span class="nt">&gt;&lt;BR&gt;</span>
+    <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Send&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;reset&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/FORM&gt;</span>
+</pre></div>
+<p>若用户在text字段中输入‘Neekey’，并且在file字段中选择文件‘text.txt’,那么服务器端收到的post数据如下：</p>
+<div class="highlight"><pre><span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;submit-name&quot;</span>
+
+<span class="vg">Neekey</span>
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;files&quot;</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;file1.txt&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">text</span><span class="o">/</span><span class="vg">plain</span>
+
+<span class="o">...</span><span class="w"> </span><span class="vg">contents</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">file1</span><span class="o">.</span><span class="vg">txt</span><span class="w"> </span><span class="o">...</span>
+<span class="o">--</span><span class="vg">AaB03x</span><span class="o">--</span>
+</pre></div>
+<p>若file字段为空：</p>
+<div class="highlight"><pre><span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;submit-name&quot;</span>
+
+<span class="vg">Neekey</span>
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;files&quot;</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">text</span><span class="o">/</span><span class="vg">plain</span>
+
+<span class="o">--</span><span class="vg">AaB03x</span><span class="o">--</span>
+</pre></div>
+<p>若将file 的 input修改为可以多个文件一起上传：</p>
+<div class="highlight"><pre><span class="nt">&lt;FORM</span> <span class="na">action=</span><span class="s">&quot;http://server.com/cgi/handle&quot;</span>
+     <span class="na">enctype=</span><span class="s">&quot;multipart/form-data&quot;</span>
+     <span class="na">method=</span><span class="s">&quot;post&quot;</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;P&gt;</span>
+ What is your name? <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">name=</span><span class="s">&quot;submit-name&quot;</span><span class="nt">&gt;&lt;BR&gt;</span>
+ What files are you sending? <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;file&quot;</span> <span class="na">name=</span><span class="s">&quot;files&quot;</span> <span class="na">multiple=</span><span class="s">&quot;multiple&quot;</span><span class="nt">&gt;&lt;BR&gt;</span>
+ <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;submit&quot;</span> <span class="na">value=</span><span class="s">&quot;Send&quot;</span><span class="nt">&gt;</span> <span class="nt">&lt;INPUT</span> <span class="na">type=</span><span class="s">&quot;reset&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/FORM&gt;</span>
+</pre></div>
+<p>那么在text中输入‘Neekey’,并在file字段中选中两个文件’a.jpg’和’b.jpg’后：</p>
+<div class="highlight"><pre><span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;submit-name&quot;</span>
+
+<span class="vg">Neekey</span>
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;files&quot;</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;a.jpg&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">image</span><span class="o">/</span><span class="vg">jpeg</span>
+
+<span class="o">/*</span><span class="w"> </span><span class="vg">data</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">a</span><span class="o">.</span><span class="vg">jpg</span><span class="w"> </span><span class="o">*/</span>
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;files&quot;</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;b.jpg&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">image</span><span class="o">/</span><span class="vg">jpeg</span>
+
+<span class="o">/*</span><span class="w"> </span><span class="vg">data</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">b</span><span class="o">.</span><span class="vg">jpg</span><span class="w"> </span><span class="o">*/</span>
+<span class="o">--</span><span class="vg">AaB03x</span><span class="o">--//</span><span class="w"> </span><span class="err">可以发现</span><span class="w"> </span><span class="err">两个文件数据部分，他们的</span><span class="vg">name</span><span class="err">值是一样的</span>
+</pre></div>
+<h4>数据规则</h4>
+
+<p>简单总结下post数据的规则</p>
+
+<p>1、 不同字段数据之间以边界字符串分隔：
+    --boundary\r\n // 注意，如上面的headers的例子，分割字符串应该是 ------WebKitFormBoundaryuP1WvwP2LyvHpNCi\r\n</p>
+
+<p>2、 每一行数据用”CR LF”（\r\n)分隔</p>
+
+<p>3、 数据以 边界分割符 后面加上 –结尾，如：</p>
+<div class="highlight"><pre><span class="o">------</span><span class="vg">WebKitFormBoundaryuP1WvwP2LyvHpNCi</span><span class="o">--\</span><span class="vg">r</span><span class="o">\</span><span class="vg">n</span>
+</pre></div>
+<p>4、 每个字段数据的header信息（content-disposition/content-type）和字段数据以一个空行分隔：</p>
+<div class="highlight"><pre><span class="o">\</span><span class="vg">r</span><span class="o">\</span><span class="vg">n</span><span class="o">\</span><span class="vg">r</span><span class="o">\</span><span class="vg">n</span>
+</pre></div>
+<p>更加详细的信息可以参考W3C的文档<a href="http://www.w3.org/TR/html4/interact/forms.html#h-17.13.4.2">Forms</a>，不过文档中对于<code>multiple=“multiple”</code> 的文件表单的post数据格式使用了二级边界字符串，但是在实际测试中，multiple类型的表单和多个单文件表单上传数据的格式一致，有更加清楚的可以交流下：</p>
+<div class="highlight"><pre><span class="vg">If</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">user</span><span class="w"> </span><span class="vg">selected</span><span class="w"> </span><span class="vg">a</span><span class="w"> </span><span class="vg">second</span><span class="w"> </span><span class="p">(</span><span class="vg">image</span><span class="p">)</span><span class="w"> </span><span class="vg">file</span><span class="w"> </span><span class="s2">&quot;file2.gif&quot;</span><span class="p">,</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">user</span><span class="w"> </span><span class="vg">agent</span><span class="w"> </span><span class="vg">might</span><span class="w"> </span><span class="vg">construct</span><span class="w"> </span><span class="vg">the</span><span class="w"> </span><span class="vg">parts</span><span class="w"> </span><span class="vg">as</span><span class="w"> </span><span class="nl">follows:</span>
+
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">multipart</span><span class="o">/</span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">boundary</span><span class="o">=</span><span class="vg">AaB03x</span>
+
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;submit-name&quot;</span>
+
+<span class="vg">Larry</span>
+<span class="o">--</span><span class="vg">AaB03x</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span><span class="p">;</span><span class="w"> </span><span class="vg">name</span><span class="o">=</span><span class="s2">&quot;files&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">multipart</span><span class="o">/</span><span class="vg">mixed</span><span class="p">;</span><span class="w"> </span><span class="vg">boundary</span><span class="o">=</span><span class="vg">BbC04y</span>
+
+<span class="o">--</span><span class="vg">BbC04y</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">file</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;file1.txt&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">text</span><span class="o">/</span><span class="vg">plain</span>
+
+<span class="o">...</span><span class="w"> </span><span class="vg">contents</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">file1</span><span class="o">.</span><span class="vg">txt</span><span class="w"> </span><span class="o">...</span>
+<span class="o">--</span><span class="vg">BbC04y</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Disposition:</span><span class="w"> </span><span class="vg">file</span><span class="p">;</span><span class="w"> </span><span class="vg">filename</span><span class="o">=</span><span class="s2">&quot;file2.gif&quot;</span>
+<span class="vg">Content</span><span class="o">-</span><span class="nl">Type:</span><span class="w"> </span><span class="vg">image</span><span class="o">/</span><span class="vg">gif</span>
+<span class="vg">Content</span><span class="o">-</span><span class="vg">Transfer</span><span class="o">-</span><span class="nl">Encoding:</span><span class="w"> </span><span class="vg">binary</span>
+
+<span class="o">...</span><span class="vg">contents</span><span class="w"> </span><span class="vg">of</span><span class="w"> </span><span class="vg">file2</span><span class="o">.</span><span class="vg">gif</span><span class="o">...</span>
+<span class="o">--</span><span class="vg">BbC04y</span><span class="o">--</span>
+<span class="o">--</span><span class="vg">AaB03x</span><span class="o">--</span>
+</pre></div>
+<h3>数据解析基本思路</h3>
+
+<ul>
+<li>必须使用buffer来进行post数据的解析<br>
+利用文章一开始的方法（data += chunk， data为字符串 ），可以利用字符串的操作，轻易地解析出各自端的信息，但是这样有两个问题：
+
+<ul>
+<li>文件的写入需要buffer类型的数据</li>
+<li>二进制buffer转化为string，并做字符串操作后，起索引和字符串是不一致的（若原始数据就是字符串，一致），因此是先将不总的buffer数据的toString()复制给一个字符串，再利用字符串解析出个数据的start，end位置这样的方案也是不可取的。</li>
+</ul></li>
+<li>利用边界字符串来分割各字段数据</li>
+<li>每个字段数据中，使用空行（\r\n\r\n)来分割字段信息和字段数据</li>
+<li>所有的数据都是以\r\n分割</li>
+<li>利用上面的方法，我们以某种方式确定了数据在buffer中的start和end，利用buffer.splice( start, end ) 便可以进行文件写入了</li>
+</ul>
+
+<h3>文件写入</h3>
+
+<p>比较简单，使用 File System 模块（更好的做法是用stream)</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">new</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="w"> </span><span class="c1">&#39;fs&#39; ).writeStream,</span>
+<span class="vg">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">new</span><span class="w"> </span><span class="vg">fs</span><span class="p">(</span><span class="w"> </span><span class="vg">filename</span><span class="w"> </span><span class="p">);</span>
+<span class="vg">fs</span><span class="o">.</span><span class="vg">write</span><span class="p">(</span><span class="w"> </span><span class="vg">buffer</span><span class="p">,</span><span class="w"> </span><span class="vg">function</span><span class="p">(){</span>
+<span class="w">    </span><span class="vg">fs</span><span class="o">.</span><span class="vg">end</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+<h2>expressjs 4.*上传例子</h2>
+
+<p>https://github.com/i5ting/upload-cli</p>
+
+<h2>expressjs3和4之间的差别</h2>
+
+<p>一定要注意3和4之间的差别，其实最大差别你可以到</p>
+
+<p>https://github.com/expressjs</p>
+
+<p>里找中间件,是架构上的变化</p>
+
+<h2>multer</h2>
+
+<p>最简单最好用的上传中间件，<code>multer</code>,官方推荐</p>
+
+<p>https://github.com/expressjs/multer</p>
+
+<p>最简答的用法</p>
+<div class="highlight"><pre><span class="vg">var</span><span class="w"> </span><span class="vg">app</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="vg">express</span><span class="p">();</span>
+<span class="vg">var</span><span class="w"> </span><span class="vg">multer</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="vg">require</span><span class="p">(</span><span class="c1">&#39;multer&#39;)</span>
+
+<span class="vg">app</span><span class="o">.</span><span class="vg">use</span><span class="p">(</span><span class="vg">multer</span><span class="p">({</span><span class="w"> </span>
+<span class="w">    </span><span class="nl">dest:</span><span class="w"> </span><span class="c1">&#39;./uploads&#39;,</span>
+<span class="w">  </span><span class="nl">rename:</span><span class="w"> </span><span class="vg">function</span><span class="w"> </span><span class="p">(</span><span class="vg">fieldname</span><span class="p">,</span><span class="w"> </span><span class="vg">filename</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="vg">return</span><span class="w"> </span><span class="vg">filename</span><span class="w"> </span><span class="o">//.</span><span class="vg">replace</span><span class="p">(</span><span class="o">/\</span><span class="vg">W</span><span class="o">+/</span><span class="vg">g</span><span class="p">,</span><span class="w"> </span><span class="c1">&#39;-&#39;).toLowerCase() + Date.now()</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}))</span>
+</pre></div>
+<h2>更多Options</h2>
+
+<p>https://github.com/expressjs/multer#options</p>
+
+<h2>其他</h2>
+
+<ul>
+<li>connect-busboy<a href="https://github.com/mscdex/connect-busboy">github主页</a></li>
+<li>node-formidable是比较流行的处理表单的nodejs模块。<a href="https://github.com/felixge/node-formidable">github主页</a></li>
+</ul>
+
+<h2>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am &#39;Add some feature&#39;</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+
+<h2>版本历史</h2>
+
+<ul>
+<li>v0.1.0 初始化版本</li>
+</ul>
+
+<h2>欢迎fork和反馈</h2>
+
+<ul>
+<li>write by <code>i5ting</code> shiren1118@126.com</li>
+</ul>
+
+<p>如有建议或意见，请在issue提问或邮件</p>
+
+<h2>License</h2>
+
+<p>this repo is released under the <a href="http://www.opensource.org/licenses/MIT">MIT
+License</a>.</p>
+
+			          	</article>
+			        </div>
+					</div>
+	      </body>
+	    </html>
+			<script type="text/javascript" src="toc/js/jquery-1.4.4.min.js"></script>
+			<script type="text/javascript" src="toc/js/jquery.ztree.all-3.5.min.js"></script>
+			<script type="text/javascript" src="toc/js/ztree_toc.js"></script>
+      <script type="text/javascript" src="toc/toc_conf.js"></script>
+      
+			<SCRIPT type="text/javascript" >
+			<!--
+			$(document).ready(function(){
+          var css_conf = eval(markdown_panel_style);
+          $('#readme').css(css_conf)
+          
+          var conf = eval(jquery_ztree_toc_opts);
+  				$('#tree').ztree_toc(conf);
+
+				
+			});
+			//-->
+			</SCRIPT>
+	  
