@@ -31,7 +31,7 @@ node-upload-practice
 post数据的长度
 
 
-#### 关于content-type
+### 关于content-type
 
 - get请求的headers中没有content-type这个字段
 - post 的 content-type 有两种
@@ -59,7 +59,7 @@ request.addListener("end", function() {  // 数据传输完毕
 
 注意，对于非文件post数据，上面以字符串接收是没问题的，但其实 postDataChunk 是一个 buffer 类型数据，在遇到二进制时，这样的接受方式存在问题。
 
-### POST数据的解析（multipart/form-data）
+### POST数据的解析
 
 在解析POST数据之前，先介绍一下post数据的格式：
 
