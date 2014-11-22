@@ -160,7 +160,7 @@
 </pre></div>
 <p>post数据的长度</p>
 
-<h4>关于content-type</h4>
+<h3>关于content-type</h3>
 
 <ul>
 <li>get请求的headers中没有content-type这个字段</li>
@@ -190,7 +190,7 @@
 </pre></div>
 <p>注意，对于非文件post数据，上面以字符串接收是没问题的，但其实 postDataChunk 是一个 buffer 类型数据，在遇到二进制时，这样的接受方式存在问题。</p>
 
-<h3>POST数据的解析（multipart/form-data）</h3>
+<h3>POST数据的解析</h3>
 
 <p>在解析POST数据之前，先介绍一下post数据的格式：</p>
 <div class="highlight"><pre><span class="vg">multipart</span><span class="o">/</span><span class="vg">form</span><span class="o">-</span><span class="vg">data</span>
